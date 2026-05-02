@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    } 
+    .hero-title {
+    font-family: 'Bangers', system-ui;
+    letter-spacing: 3px;
+    font-size: 5.5rem;
+}
+    .card-img-top {
+        height: 220px;
+        object-fit: cover; 
+        transition: transform 0.3s ease;
+    }
+
+    
+    .card {
+        border: none;
+        transition: all 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-10px); 
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .card:hover .card-img-top {
+        transform: scale(1.05); 
+    }
+
+   
+    .btn-warning {
+        background-color: #d4a373;
+        border: none !important; 
+        font-weight: 600;
+        padding: 10px 25px;
+        transition: 0.3s;
+    }
+
+    .btn-warning:hover {
+        background-color: #bc8a5f !important;
+        color: white !important;
+        box-shadow: 0 4px 15px rgba(212, 163, 115, 0.4);
+    }
+
+   
+    .navbar-brand img {
+        transition: 0.3s;
+    }
+
+    .navbar-brand:hover img {
+        transform: rotate(-5deg) scale(1.1);
+    }
+
+    .nav-link {
+        position: relative;
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #d4a373;
+        transition: 0.3s;
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
