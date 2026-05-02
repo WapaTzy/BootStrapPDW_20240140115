@@ -1,74 +1,81 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --coffee-dark: #2c1e12;
+    --coffee-gold: #c0a080;
+    --soft-white: #f8f9fa;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
-    } 
-    .hero-title {
-    font-family: 'Bangers', system-ui;
-    letter-spacing: 3px;
-    font-size: 5.5rem;
+    background-color: #ffffff;
 }
-    .card-img-top {
-        height: 220px;
-        object-fit: cover; 
-        transition: transform 0.3s ease;
-    }
 
-    
-    .card {
-        border: none;
-        transition: all 0.3s ease;
-    }
 
-    .card:hover {
-        transform: translateY(-10px); 
-        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-    }
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px); 
+    border-bottom: 1px solid #eee;
+}
 
-    .card:hover .card-img-top {
-        transform: scale(1.05); 
-    }
+.nav-link {
+    color: var(--coffee-dark) !important;
+    transition: 0.3s;
+}
 
-   
-    .btn-warning {
-        background-color: #d4a373;
-        border: none !important; 
-        font-weight: 600;
-        padding: 10px 25px;
-        transition: 0.3s;
-    }
+.nav-link:hover {
+    color: var(--coffee-gold) !important;
+}
 
-    .btn-warning:hover {
-        background-color: #bc8a5f !important;
-        color: white !important;
-        box-shadow: 0 4px 15px rgba(212, 163, 115, 0.4);
-    }
 
-   
-    .navbar-brand img {
-        transition: 0.3s;
-    }
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 5rem;
+    letter-spacing: -1px;
+    text-shadow: 2px 4px 15px rgba(0,0,0,0.3);
+}
 
-    .navbar-brand:hover img {
-        transform: rotate(-5deg) scale(1.1);
-    }
 
-    .nav-link {
-        position: relative;
-    }
+.btn-warning {
+    background-color: var(--coffee-gold) !important;
+    border: none !important;
+    color: white !important;
+    padding: 15px 40px;
+    font-weight: 600;
+    border-radius: 50px; /* Bentuk kapsul yang modern */
+    box-shadow: 0 4px 15px rgba(192, 160, 128, 0.4);
+    transition: 0.3s;
+}
 
-    .nav-link::after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #d4a373;
-        transition: 0.3s;
-    }
+.btn-warning:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(192, 160, 128, 0.5);
+}
 
-    .nav-link:hover::after {
-        width: 100%;
-    }
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--coffee-dark);
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--coffee-gold);
+}
+
+
+.ratio-16x9 {
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid #f0f0f0;
+}
